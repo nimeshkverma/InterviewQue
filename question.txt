@@ -1,0 +1,40 @@
+> Please find the coding question below and reply back on the same mail.
+>
+> Time Limit: 120 minutes
+>
+> Here is the problem statement:
+>
+> Implement a Time Traveling Hash Table.
+>
+> "Time Traveling Hash Table"
+>
+> Given:
+> Long getTime() // monotonically unique and increasing time
+>  
+> // Implement
+> put(k, v) 
+> get(k, t) // Return the value for k as it was at time t
+>  
+> // Example
+> At Time 0:
+> insert "Vipul" -> "Sumo"
+>  
+> At Time 5: 
+> insert "Vipul" -> "Logic"
+>
+> At Time 10:
+> insert "Anup" -> "Noida"
+>  
+> get("Vipul", -1) = null
+> get("Vipul", 0) = "Sumo" // Times 0 -> 4 return "Sumo"
+> get("Vipul", 1) = "Sumo"
+> get("Vipul", 2) = "Sumo"
+> get("Vipul", 5) = "Logic" // All times >= 5 return "Logic"
+> get("Vipul", 10) = "Logic"
+>
+> get("Anup", 7) = null
+> get("Anup", 10) = "Noida"
+> get("Anup", 25) = "Noida"
+>
+> We are not worried about space complexity but very much concerned with Time complexity. So please write a clean, compilable and production quality
+> code with a focus on time complexity.
