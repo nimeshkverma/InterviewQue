@@ -1,0 +1,109 @@
+Hey!
+
+ MergeSort
+-----------
+
+void mergesort(int arr[], int start, int end){
+if(start<end){
+int mid = (start+end)/2;
+mergesort(arr,start,mid);
+mergesort(arr,mid+1,end);
+merge(arr,0,mid,mid+1,n);}
+
+}
+
+
+
+void merge(int arr[], int start1, int end1, int start2, int end2){
+
+int n = end1-start1 +end2-start2 +2;
+
+int a[n];
+int x=0;
+int i = start1; j =start2;
+while((i<=end1)&&(j<=end2)){
+
+if(arr[i]<=arr[j]){
+a[x++]= arr[i];
+i++;
+
+}
+else{
+
+a[x++] = arr[j];
+j++;}
+
+
+
+}
+
+if(x<(n-1)){
+
+if(i>=endl){
+
+while(x<n){
+a[x++]=arr[j++];
+}
+
+
+
+
+
+}
+else{
+
+a[x++]=arr[i++];
+
+}
+
+
+
+}
+
+int min = (start1<start2)?start1:start2;
+
+for(int z=0;z<n;z++){
+
+arr[min+z]=a[z];
+}
+
+}
+
+
+
+------------------------------------------------------------
+
+
+
+ DB design
+-----------
+
+Gmail
+
+
+
+Register, Auth, Send mail    , reply, thread, cc, bcc, attachments
+
+
+User Table;
+
+Columns UserId(primary key), User_Encrypted_Pass, User_Name, Other details like age, location, mobile number, device print ID.
+
+
+Attachements Table;
+
+Attachment Id, MessageId, UserId, Attachmemnt;
+
+
+Message Table;
+
+Column primary_self_incrementor ThreadId MessageId, FromSend, ToSend, Message_Test, Date messagenumber Vis (bool)
+ 
+
+
+
+
+
+
+
+
